@@ -8,4 +8,7 @@ For each question file:
 
 If there are no questions in `questions/to-run/`, inform the user.
 
-After processing all questions, report a summary of what was answered.
+After processing all questions:
+
+1. Run `/update-readme` to update the answers table in `README.md`
+2. Report a summary of what was answered

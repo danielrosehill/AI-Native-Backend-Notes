@@ -32,6 +32,7 @@ When answering, for each file in `questions/to-run/`:
 
 - `/add-questions <text>` - Parse and save one or more questions to `questions/to-run/`
 - `/run-prompts` - Answer all pending questions in `questions/to-run/`
+- `/update-readme` - Rebuild the answers table in `README.md`
 - `/organise` - Group answers into topic subfolders and update the index
 - `/export` - Generate a timestamped PDF export via Typst
 
