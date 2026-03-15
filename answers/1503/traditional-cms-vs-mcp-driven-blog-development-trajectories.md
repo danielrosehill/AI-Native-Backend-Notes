@@ -1,3 +1,8 @@
+---
+generated: 2026-03-15
+model: claude-opus-4-6
+---
+
 # Traditional CMS vs. MCP-Driven Blog: Development Trajectories Compared
 
 ## Overview

@@ -3,11 +3,12 @@ An open source notebook of questions and answers about AI-native backend develop
 # Directory Structure
 
 ```
-questions/to-run/   # Pending questions (not yet answered)
-questions/run/      # Answered questions (archive)
-answers/            # Answer files, optionally grouped into topic subfolders
-answers/INDEX.md    # Auto-generated index of all answers
-exports/            # Typst templates and PDF exports
+questions/to-run/        # Pending questions (not yet answered)
+questions/run/           # Answered questions (archive)
+answers/<DDMM>/          # Answer files grouped by date subfolder (e.g. answers/1503/)
+answers/INDEX.md         # Auto-generated index of all answers
+exports/template.typ     # Reusable Typst template
+exports/<DDMM>/          # PDF exports grouped by date subfolder (e.g. exports/1503/)
 ```
 
 # Workflow
@@ -25,7 +26,7 @@ You should edit the question lightly for clarity while preserving its core detai
 When answering, for each file in `questions/to-run/`:
 
 1. Read the question
-2. Write a thorough markdown answer in `answers/` (descriptive kebab-case filename, e.g. `best-api-for-weather-data.md`)
+2. Write a thorough markdown answer in `answers/<DDMM>/` using today's date subfolder (descriptive kebab-case filename, e.g. `best-api-for-weather-data.md`)
 3. Move the question file from `questions/to-run/` to `questions/run/`
 
 ## Slash Commands
@@ -47,7 +48,8 @@ Run periodically (or use `/organise` and `/export`):
 
 1. Group answers into topic subfolders under `answers/`
 2. Update `answers/INDEX.md`
-3. Generate a Typst PDF export to `exports/export-DDMMYYYY.pdf` with:
+3. Generate a Typst PDF export to `exports/<DDMM>/export-DDMMYYYY.pdf` using `exports/template.typ` with:
    - Summarised questions followed by full answers
+   - Footer: Content attribution (Claude model), generation date, questions author, GitHub source link
    - Page numbers in footer
-   - Generation date in dd/mm/yyyy format
+   - Answer files must include YAML frontmatter with `generated` (date) and `model` fields

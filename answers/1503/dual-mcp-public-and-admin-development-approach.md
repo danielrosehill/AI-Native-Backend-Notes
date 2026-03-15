@@ -1,3 +1,8 @@
+---
+generated: 2026-03-15
+model: claude-opus-4-6
+---
+
 # Dual MCP Server Architecture: Public and Admin Access
 
 ## The Scenario: CityTransit -- A Public Transit Data Platform

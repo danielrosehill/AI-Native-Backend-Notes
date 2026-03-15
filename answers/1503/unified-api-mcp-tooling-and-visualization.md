@@ -1,3 +1,8 @@
+---
+generated: 2026-03-15
+model: claude-opus-4-6
+---
+
 # Tooling for Unified API and MCP Tool Development with Visibility
 
 ## The Problem

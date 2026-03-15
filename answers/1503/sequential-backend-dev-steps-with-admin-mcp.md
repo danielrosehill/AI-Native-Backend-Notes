@@ -1,3 +1,8 @@
+---
+generated: 2026-03-15
+model: claude-opus-4-6
+---
+
 # Sequential Order of Backend Development Operations with an Admin MCP Server
 
 This walkthrough defines the logical step-by-step order for building a modern backend, using a **blog application** as a concrete example. The key departure from traditional practice is that the internal admin interface -- historically a web-based admin panel (think Django Admin, Rails Admin, Retool) -- is replaced by a **privileged MCP server** that exposes administrative operations as tools consumable by an AI agent.
