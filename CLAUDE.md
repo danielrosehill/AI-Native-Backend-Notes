@@ -20,7 +20,9 @@ You should edit the question lightly for clarity while preserving its core detai
 
 ## Answering Questions
 
-For each file in `questions/to-run/`:
+**Do not automatically answer pending questions.** Only process the question queue when explicitly instructed (e.g. via `/run-prompts`).
+
+When answering, for each file in `questions/to-run/`:
 
 1. Read the question
 2. Write a thorough markdown answer in `answers/` (descriptive kebab-case filename, e.g. `best-api-for-weather-data.md`)
